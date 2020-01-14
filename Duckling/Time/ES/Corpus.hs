@@ -2,8 +2,7 @@
 -- All rights reserved.
 --
 -- This source code is licensed under the BSD-style license found in the
--- LICENSE file in the root directory of this source tree. An additional grant
--- of patent rights can be found in the PATENTS file in the same directory.
+-- LICENSE file in the root directory of this source tree.
 
 
 {-# LANGUAGE OverloadedStrings #-}
@@ -413,5 +412,27 @@ allExamples = concat
              ]
   , examples (datetime (2013, 8, 15, 0, 0, 0) Day)
              [ "jue 15"
+             ]
+  , examples (datetimeHoliday (2013, 12, 18, 0, 0, 0) Day "Día Mundial de la Lengua Árabe")
+             [ "dia mundial de la lengua arabe"
+             , "día mundial de la lengua árabe"
+             ]
+  , examples (datetimeHoliday (2013, 3, 1, 0, 0, 0) Day "Día de la Cero Discriminación")
+             [ "dia de la cero discriminacion"
+             , "día de la cero discriminación"
+             ]
+  , examples (datetimeHoliday (2019, 7, 6, 0, 0, 0) Day "Día Internacional de las Cooperativas")
+             [ "día internacional de las cooperativas del 2019"
+             ]
+  , examples (datetimeHoliday (2013, 11, 17, 0, 0, 0) Day "Día de la Prematuridad Mundial")
+             [ "día de la prematuridad mundial"
+             , "día mundial del prematuro"
+             , "día mundial del niño prematuro"
+             ]
+  , examples (datetimeHoliday (2013, 4, 1, 0, 0, 0) Day "Día de los Inocentes de Abril")
+             [ "día de los inocentes"
+             , "día de los inocentes de abril"
+             , "día de las bromas de abril"
+             , "día de las bromas"
              ]
   ]

@@ -2,8 +2,7 @@
 -- All rights reserved.
 --
 -- This source code is licensed under the BSD-style license found in the
--- LICENSE file in the root directory of this source tree. An additional grant
--- of patent rights can be found in the PATENTS file in the same directory.
+-- LICENSE file in the root directory of this source tree.
 
 
 {-# LANGUAGE OverloadedStrings #-}
@@ -117,6 +116,22 @@ allExamples = concat
              , "GBP 3.01"
              , "3 GBP 1 pence"
              , "3 GBP and one"
+             ]
+  , examples (simple CAD 3.03)
+             [ "CAD3.03"
+             , "CAD 3.03"
+             , "3 CAD 3 cents"
+             ]
+  , examples (simple CHF 3.04)
+             [ "CHF3.04"
+             , "CHF 3.04"
+             , "3 CHF 4 cents"
+             ]
+  , examples (simple CNY 3)
+             [ "CNY3"
+             , "CNY 3"
+             , "3 CNY"
+             , "3 yuan"
              ]
   , examples (simple Unnamed 42)
              [ "42 bucks"
